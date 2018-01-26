@@ -1,0 +1,16 @@
+<mat-sidenav-container class="example-container">
+    <mat-sidenav opened='true' mode='side' class="example-sidenav">
+        <mat-list>
+            <mat-list-item *ngFor='let folder of folders'>
+                <a [routerLink]="folder">
+          {{folder}}
+        </a>
+            </mat-list-item>
+        </mat-list>
+    </mat-sidenav>
+
+    <div class="example-sidenav-content">
+        <router-outlet></router-outlet>
+    </div>
+
+</mat-sidenav-container>

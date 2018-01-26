@@ -1,0 +1,16 @@
+<mat-toolbar color="accent">
+    <div fxLayout="row">
+        <div fxFlex='80'>
+            <a [routerLink]="'/dashboard'">
+        dashboard</a>
+        </div>
+
+        <div fxFlex='20'><a routerLink='/mailbox'>
+      mailbox
+    </a></div>
+    </div>
+</mat-toolbar>
+
+<div class="example-sidenav-content">
+    <router-outlet></router-outlet>
+</div>
